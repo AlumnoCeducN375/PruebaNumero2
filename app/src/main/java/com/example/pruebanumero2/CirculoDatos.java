@@ -49,7 +49,7 @@ public class CirculoDatos extends AppCompatActivity {
         if(!nombreProject.isEmpty()){
             Cursor guardar = editableDB.rawQuery("select nombreproyecto, tipofigura, radio, area from proyectos where nombreproyecto LIKE '%" + nombreProject + "%'",null);
         }
-        else{
+        else {
             Toast.makeText(this, "Complete el campo de nombre de projecto", Toast.LENGTH_SHORT).show();
         }
 
