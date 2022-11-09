@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a calculadora de Areas"
+        android:textSize="50px"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Seleccione una figura"
+        android:textSize="50px"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="152dp"
+        android:layout_height="129dp"
+        app:srcCompat="@drawable/cuadrado"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cambiarCuadrado"
+        android:text="Cuadrado" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="154dp"
+        android:layout_height="162dp"
+        app:srcCompat="@drawable/circulo"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cambiarCirculo"
+        android:text="Circunferencia" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="146dp"
+        android:layout_height="143dp"
+        app:srcCompat="@drawable/triangulo"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cambiarTriangulo"
+        android:text="Triangulo" />
+
+</LinearLayout>

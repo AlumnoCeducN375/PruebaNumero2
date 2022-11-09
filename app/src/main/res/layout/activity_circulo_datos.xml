@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CirculoDatos"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/txtNombreProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nombre del Proyecto"/>
+
+    <EditText
+        android:id="@+id/txtTipoFigura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Tipo de Figura"/>
+
+    <EditText
+        android:id="@+id/txtRadioCirculoFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Radio del Circulo"
+        />
+
+    <EditText
+        android:id="@+id/txtCirculoResultadoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Area de la Circunferencia"
+        />
+
+    <Button
+        android:id="@+id/btnGuardarProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Proyecto"
+        android:onClick="guardarProyecto"
+        />
+</LinearLayout>

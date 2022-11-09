@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiguraCuadrado"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTituloCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Calculadora de Area"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/txtCuadradoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cuadrado" />
+
+    <ImageView
+        android:id="@+id/imgCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/arearec" />
+
+    <EditText
+        android:id="@+id/txtPrimerDatoCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Ingrese el lado 1 del Rectangulo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSegundoDatoCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Ingrese el lado 2 del Rectangulo"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCalcularCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Calcular Area" />
+
+    <TextView
+        android:id="@+id/txtResultadoCuadradoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Aqui va su resultado" />
+
+    <Button
+        android:id="@+id/btnGuardarRectangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Guardar" />
+</LinearLayout>

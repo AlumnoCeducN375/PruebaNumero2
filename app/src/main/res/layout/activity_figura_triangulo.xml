@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiguraTriangulo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTituloTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular el Area"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Triangulo"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/imgTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/areatri"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/txtPrimerDatoTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la base del Triangulo"
+        android:inputType="textPersonName"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/txtSegundoDatoTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la altura del Triangulo"
+        android:inputType="textPersonName"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnCalcularAreaTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Area"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txtResultadoTrianguloArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aqui va el Area del Triangulo"
+        android:text="TextView"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnGuardarTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Guardar" />
+
+</LinearLayout>

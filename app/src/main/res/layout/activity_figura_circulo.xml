@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiguraCirculo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTituloCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular el Area"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txtCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Circunferencia"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/areacircle" />
+
+    <EditText
+        android:id="@+id/txtRadioCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Ingrese el Radio del circulo"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="CalcularArea"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/txtResultadoCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Su resultado va aquí" />
+
+    <Button
+        android:id="@+id/btnGuardarCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="botonGuardarDatos"
+        android:text="Guardar" />
+
+
+</LinearLayout>
