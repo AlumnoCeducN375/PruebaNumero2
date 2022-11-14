@@ -21,7 +21,6 @@ public class CirculoDatos extends AppCompatActivity {
     EditText radiofinal;
     EditText resultadoFinal;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,27 +52,10 @@ public class CirculoDatos extends AppCompatActivity {
             Toast.makeText(this, "Complete el campo de nombre de projecto", Toast.LENGTH_SHORT).show();
         }
 
-
-
-
-
-
-
-
-
-
-
         String projectName = nombreProyecto.getText().toString();
         String figureType = tipoFigura.getText().toString();
         String radio= rad1.getBytes(StandardCharsets.UTF_8).toString();
         String res = resul.getBytes(StandardCharsets.UTF_8).toString();
-
-
-
-
-
-
-
 
         ContentValues paqueteDeProyecto = new ContentValues();
         paqueteDeProyecto.put("nombreProyecto",projectName);
@@ -84,8 +66,5 @@ public class CirculoDatos extends AppCompatActivity {
         editableDB.insert("proyectos",null,paqueteDeProyecto);
         editableDB.close();
         Toast.makeText(this, "Tabla Creada Correctamente", Toast.LENGTH_LONG).show();
-
     }
-
-
 }
